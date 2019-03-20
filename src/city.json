@@ -1,0 +1,82 @@
+{
+  "list": [
+    {
+      "id": 0,
+      "country": "Россия",
+      "opened": false,
+      "cities": [
+        {
+          "id": 0,
+          "name": "Москва"
+        },
+        {
+          "id": 1,
+          "name": "Абрамцево"
+        },
+        {
+          "id": 2,
+          "name": "Алабино"
+        },
+        {
+          "id": 3,
+          "name": "Апрелевка"
+        },
+        {
+          "id": 4,
+          "name": "Архангельское"
+        },
+        {
+          "id": 5,
+          "name": "Ашитково"
+        },
+        {
+          "id": 6,
+          "name": "Байконур"
+        },
+        {
+          "id": 7,
+          "name": "Бакшеево"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "country": "Америка",
+      "opened": false,
+      "cities": [
+        {
+          "id": 0,
+          "name": "New York"
+        },
+        {
+          "id": 1,
+          "name": "Los Angeles"
+        },
+        {
+          "id": 2,
+          "name": "Chicago"
+        },
+        {
+          "id": 3,
+          "name": "Houston"
+        },
+        {
+          "id": 4,
+          "name": "Philadelphia"
+        },
+        {
+          "id": 5,
+          "name": "Phoenix"
+        },
+        {
+          "id": 6,
+          "name": "San Antonio"
+        },
+        {
+          "id": 7,
+          "name": "San Diego"
+        }
+      ]
+    }
+  ]
+}

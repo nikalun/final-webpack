@@ -1,0 +1,56 @@
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.panel {
+    flex-basis: 50%;
+}
+
+.panel_left {
+    text-align: left;
+}
+
+.date {
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.block {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+}
+
+.panel_right {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.panel_top {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+.item ul {
+    display: none;
+}
+
+.item li,
+.item p {
+    cursor: pointer;
+}
+
+.item li:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.item_opened ul {
+    display: block;
+}

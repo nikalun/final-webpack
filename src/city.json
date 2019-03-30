@@ -3,7 +3,6 @@
     {
       "id": 0,
       "country": "Россия",
-      "opened": false,
       "cities": [
         {
           "id": 0,
@@ -42,7 +41,6 @@
     {
       "id": 1,
       "country": "Америка",
-      "opened": false,
       "cities": [
         {
           "id": 0,

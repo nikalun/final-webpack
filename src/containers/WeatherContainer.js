@@ -1,7 +1,7 @@
-import React, { PureComponent } from "react";
-import { connect } from "react-redux";
+import React, { PureComponent } from 'react';
+import { connect } from 'react-redux';
 
-import { Weather } from "../components/Weather";
+import { Weather } from '../components/Weather';
 
 class WeatherContainer extends PureComponent{
     render() {

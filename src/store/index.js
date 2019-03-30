@@ -1,7 +1,7 @@
-import { createStore, combineReducers, applyMiddleware } from "redux";
-import logger from "redux-logger";
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import { cityReducer, weatherReducer } from "./reducers";
+import { cityReducer, weatherReducer } from './reducers';
 
 const reducer = combineReducers({
     cityReducer: cityReducer,

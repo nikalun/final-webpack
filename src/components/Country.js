@@ -1,17 +1,18 @@
-import React, { Fragment } from "react";
-import PropTypes from "prop-types";
-import classnames from "classname";
+import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
-import { City } from "./City.js";
+import { City } from './City.js';
 
 export const Country = props => {
     const {
         data: { list },
+        country,
         onClick
     } = props;
-    const content = list.map(item => {
-        const className = classnames("item", {
-            ["item_opened"]: item.opened
+    const renderCities = list.map(item => {
+        const className = classnames('item', {
+            ['item_opened']: item.country === country
         });
 
         return (
@@ -26,11 +27,13 @@ export const Country = props => {
         );
     });
 
-    return <Fragment>{content}</Fragment>;
+    return <Fragment>{renderCities}</Fragment>;
 };
 
 Country.propTypes = {
-    data: PropTypes.object,
+    data: PropTypes.shape({
+        list: PropTypes.array
+    }),
     onClick: PropTypes.func
 };
 

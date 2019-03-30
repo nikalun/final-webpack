@@ -1,12 +1,18 @@
-import React from "react";
-import { connect } from "react-redux";
+import React, { PureComponent } from 'react';
+import { connect } from 'react-redux';
+import { Calendar } from 'react-calendar';
 
-import { RawCalendar as Calendar } from "../components/Calendar";
+class CalendarContainer extends PureComponent {
+    render() {
+        const { date, onChange } = this.props;
+        return <Calendar value={date} onChange={onChange} />
+    }
+}
 
 const mapDispatchToProps = dispatch => {
     return {
         onChange: e => {
-            dispatch({ type: "SET_DATE", payload: e });
+            dispatch({ type: 'SET_DATE', payload: e });
         }
     };
 };
@@ -17,7 +23,4 @@ const mapStateToProps = state => {
     }
 };
 
-export const CalendarContainer = connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(Calendar);
+export default connect(mapStateToProps, mapDispatchToProps)(CalendarContainer);
